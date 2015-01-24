@@ -16,7 +16,7 @@ In the original dataset from Smartlab; for each record in the dataset it is prov
 - An identifier of the subject who carried out the experiment.
 
 
-The assignment requires the extraction of columns from the dataset with "mean" or "std" as part of the column description. The assumption I have made in here is that the wording "mean" and "std" is case sensitive. Therefore where column description with "Mean" of "Std" will be ignored.
+The assignment requires the extraction of columns from the original dataset with "mean" or "std" as part of the column description. The assumption I have made in here is that the wording "mean" and "std" is case sensitive. Therefore where column description with "Mean" of "Std" will be ignored.
 Because we are only interested in the mean and std columns, the data files in the Inertial Signals folder are ignored also.
 With the above assumptions, we only need a subset of these datafiles.  
 
@@ -51,9 +51,11 @@ For the requirement 1 above,
 I have interpreted that "Merges the training and the test sets to create one data set" does not mean everything in one data frame. Hence I have just merged x_test and x_train data together, y_test and y_train data together and subject_test and subject_train data together.  It is further down the tasks(task 3) that these y(activity) and subject data is merged into the final set of data frame.
 
 For requirement 5 above,
- to help traceability and to avoid misinterpretation during the processing of extracting the required columns, the variables in GetDataAssignmentPart2.txt  are mainly prefixed with AVG to original column names, the removal of the parenthesis and the replacement of dash with underscore. (i.e. for tBodyAcc-mean()-X  will become AVGtBodyAcc_mean_X).
+ to help traceability and to avoid misinterpretation during the processing of extracting the required columns, the variables in GetDataAssignmentPart2.txt  are mainly prefixed with AVG to the original column names, the removal of the parenthesis and the replacement of dash with underscore. (i.e. for tBodyAcc-mean()-X  will become AVGtBodyAcc_mean_X).
 
 The run_analysis.R has added comments to explain what the code is doing. 
+The total number of rows and columns in dataframes were constantly monitored during the data transformation process to ensure no data rows and columns are missing.  
+
 
 
 
