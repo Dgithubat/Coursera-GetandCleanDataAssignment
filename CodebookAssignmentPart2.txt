@@ -1,0 +1,281 @@
+
+This is the code book for the Coursera "Getting and Cleaning Data"  course assignment.
+The data  "GetDataAssignmentPart2.txt" is derived from the data which is used by the Coursera "Getting and Cleaning Data" course.
+The original Coursera data can be obtained via this link https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+The feature_info.txt file describes the orignal variables. 
+
+
+Brief description of the variables: 
+The varibles GetDataAssignmentPart2.txt are the average of the mean or std of the features/variables in the Human Activity Recognition experiments by Smartlab as requested from the assignment. To add traceability and to avoid misinterpretation, the variables in GetDataAssignmentPart2.txt  are mainly prefixed with AVG to original column names, the removal of the parenthesis and the replacement of dash with underscore. (i.e. for tBodyAcc-mean()-X  will become AVGtBodyAcc_mean_X).
+
+
+A bit of the background of the original variable: 
+The original variables from the experiements are the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+
+
+In the GetDataAssignmentPart2.txt
+
+All the AVG columns are the mean/average of the original mean() or std() variables grouped by the subject and activity.
+Since there are 30 subjects and 6 activities, this yields a total of 180 rows in the data file.
+There are 81 variables.
+They are
+
+Subject 
+	- Identifier who carried the waist-mounted device with embedded nertial sensors. 
+          There were 3subjects thus the range is from to 30.
+
+Activity 
+	- The activity the subject was performing.
+   	WALKING
+
+	WALKING_UPSTAIRS
+	
+WALKING_DOWNSTAIRS
+	
+SITTING
+
+	STANDING
+	
+LAYING
+
+AVGtBodyAcc_mean_X
+	- Average of the tBodyACC_mean_X
+
+
+
+AVGtBodyAcc_mean_Y
+	- Average of the tBodyAcc_mean_Y
+
+AVGtBodyAcc_mean_Z
+	- Average of the tBodyAcc_mean_Z
+
+AVGtBodyAcc_std_X
+	- Average of the tBodyAcc_std_X
+
+AVGtBodyAcc_std_Y
+	- Average of the tBodyAcc_std_Y
+
+AVGtBodyAcc_std_Z
+	- Average of the tBodyAcc_std_Z
+
+AVGtGravityAcc_mean_X
+	- Average of the tGravityAcc_mean_X
+
+AVGtGravityAcc_mean_Y
+	- Average of the tGravityAcc_mean_Y
+
+AVGtGravityAcc_mean_Z
+	- Average of the tGravityAcc_mean_Z
+
+AVGtGravityAcc_std_X
+	- Average of the tGravityAcc_std_X
+
+AVGtGravityAcc_std_Y
+	- Average of the tGravityAcc_std_Y
+
+AVGtGravityAcc_std_Z
+	- Average of the tGravityAcc_std_Z
+
+AVGtBodyAccJerk_mean_X
+	- Average of the tBodyAccJerk_mean_X
+
+AVGtBodyAccJerk_mean_Y
+	- Average of the tBodyAccJerk_mean_Y
+
+AVGtBodyAccJerk_mean_Z
+	- Average of the tBodyAccJerk_mean_Z
+
+AVGtBodyAccJerk_std_X
+	- Average of the tBodyAccJerk_std_X
+
+AVGtBodyAccJerk_std_Y
+	- Average of the tBodyAccJerk_std_Y
+
+AVGtBodyAccJerk_std_Z
+	- Average of the tBodyAccJerk_std_Z
+
+AVGtBodyGyro_mean_X
+	- Average of the tBodyGyro_mean_X
+
+AVGtBodyGyro_mean_Y
+	- Average of the tBodyGyro_mean_Y
+
+AVGtBodyGyro_mean_Y
+	- Average of the tBodyGyro_mean_Z
+
+AVGtBodyGyro_std_X
+	- Average of the tBodyGyro_std_X
+
+AVGtBodyGyro_std_Y
+	- Average of the tBodyGyro_std_Y
+
+AVGtBodyGyro_std_Z
+	- Average of the tBodyGyro_std_Z
+
+AVGtBodyGyroJerk_mean_X
+	- Average of the tBodyGyroJerk_mean_X
+
+AVGtBodyGyroJerk_mean_Y
+	- Average of the tBodyGyroJerk_mean_Y
+
+AVGtBodyGyroJerk_mean_Z
+	- Average of the tBodyGyroJerk_mean_Z
+
+AVGtBodyGyroJerk_std_X
+	- Average of the tBodyGyroJerk_std_X
+
+AVGtBodyGyroJerk_std_Y
+	- Average of the tBodyGyroJerk_std_Y
+
+AVGtBodyGyroJerk_std_Z
+	- Average of the tBodyGyroJerk_std_Z
+
+AVGtBodyAccMag_mean
+	- Average of the tBodyAccMag_mean
+
+AVGtBodyAccMag_std
+	- Average of the tBodyAccMag_std
+
+AVGtGravityAccMag_mean
+	- Average of the tGravityAccMag_mean
+
+AVGtGravityAccMag_std
+	- Average of the tGravityAccMag_std
+
+AVGtBodyAccJerkMag_mean
+	- Average of the tBodyAccJerkMag_mean
+
+AVGtBodyAccJerkMag_std
+	- Average of the tBodyAccJerkMag_std
+
+AVGtBodyGyroMag_mean
+	- Average of the tBodyGyroMag_mean
+
+AVGtBodyGyroMag_std
+	- Average of the tBodyGyroMag_std
+
+AVGtBodyGyroJerkMag_mean
+	- Average of the tBodyGyroJerkMag_mean
+
+AVGtBodyGyroJerkMag_std
+	- Average of the tBodyGyroJerkMag_std
+
+AVGfBodyAcc_mean_X
+	- Average of the fBodyAcc_mean_X
+
+AVGfBodyAcc_mean_Y
+	- Average of the fBodyAcc_mean_Y
+
+AVGfBodyAcc_mean_Z
+	- Average of the fBodyAcc_mean_Z
+
+AVGfBodyAcc_std_X
+	- Average of the fBodyAcc_std_X
+
+AVGfBodyAcc_std_Y
+	- Average of the fBodyAcc_std_Y
+
+AVGfBodyAcc_std_Z
+	- Average of the fBodyAcc_std_Z
+
+AVGfBodyAcc_meanFreq_X
+	- Average of the fBodyAcc_meanFreq_X
+
+AVGfBodyAcc_meanFreq_Y
+	- Average of the fBodyAcc_meanFreq_Y
+
+AVGfBodyAcc_meanFreq_Z
+	- Average of the fBodyAcc_meanFreq_Z
+
+AVGfBodyAccJerk_mean_X
+	- Average of the fBodyAccJerk_mean_X
+
+AVGfBodyAccJerk_mean_Y
+	- Average of the fBodyAccJerk_mean_Y
+
+AVGfBodyAccJerk_mean_Z
+	- Average of the fBodyAccJerk_mean_Z
+
+AVGfBodyAccJerk_std_X
+	- Average of the fBodyAccJerk_std_X
+
+AVGfBodyAccJerk_std_Y
+	- Average of the fBodyAccJerk_std_Y
+
+AVGfBodyAccJerk_std_Z
+	- Average of the fBodyAccJerk_std_Z
+
+AVGfBodyAccJerk_meanFreq_X
+	- Average of the fBodyAccJerk_meanFreq_X
+
+AVGfBodyAccJerk_meanFreq_Y
+	- Average of the fBodyAccJerk_meanFreq_Y
+
+AVGfBodyAccJerk_meanFreq_Z
+	- Average of the fBodyAccJerk_meanFreq_Z
+
+AVGfBodyGyro_mean_X
+	- Average of the fBodyGyro_mean_X
+
+AVGfBodyGyro_mean_Y
+	- Average of the fBodyGyro_mean_Y
+
+AVGfBodyGyro_mean_Z
+	- Average of the fBodyGyro_mean_Z
+
+AVGfBodyGyro_std_X
+	- Average of the fBodyGyro_std_X
+
+AVGfBodyGyro_std_Y
+	- Average of the fBodyGyro_std_Y
+
+AVGfBodyGyro_std_Z
+	- Average of the fBodyGyro_std_Z
+
+AVGfBodyGyro_meanFreq_X
+	- Average of the fBodyGyro_meanFreq_X
+
+AVGfBodyGyro_meanFreq_Y
+	- Average of the fBodyGyro_meanFreq_Y
+
+AVGfBodyGyro_meanFreq_Z
+	- Average of the fBodyGyro_meanFreq_Z
+
+AVGfBodyAccMag_mean
+	- Average of the fBodyAccMag_mean
+
+AVGfBodyAccMag_std
+	- Average of the fBodyAccMag_std
+
+AVGfBodyAccMag_meanFreq
+	- Average of the fBodyAccMag_meanFreq
+
+AVGfBodyBodyAccJerkMag_mean
+	- Average of the fBodyBodyAccJerkMag_mean
+
+AVGfBodyBodyAccJerkMag_std
+	- Average of the fBodyBodyAccJerkMag_std
+
+AVGfBodyBodyAccJerkMag_meanFreq
+	- Average of the fBodyBodyAccJerkMag_meanFreq
+
+AVGfBodyBodyGyroMag_mean
+	- Average of the fBodyBodyGyroMag_mean
+
+AVGfBodyBodyGyroMag_std
+	- Average of the fBodyBodyGyroMag_std
+
+AVGfBodyBodyGyroMag_meanFreq
+	- Average of the fBodyBodyGyroMag_meanFreq
+
+AVGfBodyBodyGyroJerkMag_mean
+	- Average of the fBodyBodyGyroJerkMag_mean
+
+AVGfBodyBodyGyroJerkMag_std
+	- Average of the fBodyBodyGyroJerkMag_std
+
+AVGfBodyBodyGyroJerkMag_meanFreq
+	- Average of the fBodyBodyGyroJerkMag_meanFreq
